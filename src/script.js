@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function(){
         convertedValue = convertedValue.replace("tan", "Math.tan");
         convertedValue = convertedValue.replace("cos", "Math.cos");
         convertedValue = convertedValue.replace("ln", "Math.log");
+        convertedValue = convertedValue.replace("log", "Math.log10");
+        convertedValue = convertedValue.replace("π", "Math.PI");
+        convertedValue = convertedValue.replace("√", "Math.sqrt");
+        convertedValue = convertedValue.replace("e", "Math.E");
 
         console.log('currentValue:', convertedValue);
         const result = eval(convertedValue);
