@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function(){
         let convertedValue = currentValue.replace("×", "*");
         convertedValue = convertedValue.replace("÷", "/");
         convertedValue = convertedValue.replace("%", "*0.01");
+        convertedValue = convertedValue.replace("sin", "Math.sin");
+        convertedValue = convertedValue.replace("tan", "Math.tan");
+        convertedValue = convertedValue.replace("cos", "Math.cos");
+        convertedValue = convertedValue.replace("ln", "Math.log");
 
         console.log('currentValue:', convertedValue);
         const result = eval(convertedValue);
