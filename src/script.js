@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(){
         
         console.log('CurrentValue:', currentValue);
 
-        const convertedValue = currentValue.replace("×", "*");
+        let convertedValue = currentValue.replace("×", "*");
         convertedValue = convertedValue.replace("÷", "/");
         convertedValue = convertedValue.replace("%", "*0.01");
 
