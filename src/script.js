@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function(){
         console.log('CurrentValue:', currentValue);
 
         const convertedValue = currentValue.replace("×", "*");
-        convertedValue = currentValue.replace("÷", "/");
-        convertedValue = currentValue.replace("%", "*0.01");
+        convertedValue = convertedValue.replace("÷", "/");
+        convertedValue = convertedValue.replace("%", "*0.01");
 
         console.log('currentValue:', convertedValue);
         const result = eval(convertedValue);
-        currentValue = result.tostring();
+        currentValue = result.toString();
         display.value = currentValue;
     }
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(){
         button.addEventListener('click', function(){
            const value = button.innerText;
 
-           if(value == 'AC'){
+           if(value == "AC"){
                 currentValue = "";
                 display.value = currentValue;
            }
