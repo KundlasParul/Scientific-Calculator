@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
     for(let i = 0; i < buttons.length ; i++){
         const button = buttons[i];
         button.addEventListener('click', function(){
-           const value = button.InnerText;
+           const value = button.innerText;
 
            if(value == 'AC'){
                 currentValue = "";
